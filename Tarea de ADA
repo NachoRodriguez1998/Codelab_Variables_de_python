@@ -1,0 +1,58 @@
+# 3. Define una variable de cada tipo primitivo 
+
+# Definir una variable de tipo entero 
+
+Variable_de_tipo_entero = 25
+
+# Definir variable de tipo flotante
+
+Variable_de_tipo_flotante = 3.1415
+
+# Definir una variable de tipo booleano 
+
+Variable_de_tipo_booleano = True 
+
+# Definir una variable de tipo cadena 
+
+Variable_de_tipo_cadena = "Soy Ignacio Rodriguez"
+
+# i. Concatena a la cadena las otras variables aplicando la conversion correcta para funcionar, guarda el resultado en una variable
+
+resultado = str(Variable_de_tipo_entero) + str(Variable_de_tipo_flotante) + str(Variable_de_tipo_booleano) + Variable_de_tipo_cadena
+
+# ii. Investiga sobre el limite de los enteros y los flotantes en python y anotar sus descubrimientos como comentarios en el archivo 
+
+# En Python, los enteros tienen un límite de 4300 caracteres, pero se puede ampliar usando la finción sys.set_int_max_str_digits()
+# Los números flotantes sí tienen un límite, para descubirlo se usa el siguiente código: sys.float_info.min = 2.2250738585072014e-308 y sys.float_info.max = 1.7976931348623157e+308
+
+# iii. Aplica la fórmula de la suma de los primeros n números pares (investiga r), tomando como n la variable de tipo entero y almacenar el resultado en una variable
+
+# Se define la variable m como un numero entero 
+
+n = int(input("Ingrese un numero entero:  "))
+
+# Se aplica la fórmula para calcular la suma de los primeros n números pares 
+
+suma_de_primeros_numeros_pares = n * (n + 1)
+
+# iv. Impresión de los resultados de las tareas anteriores
+
+# Impresion de la variable de tipo entero 
+
+print(Variable_de_tipo_entero)
+
+# Impresión de la variable de tipo flotante 
+
+print(Variable_de_tipo_flotante)
+
+# Impresion de la variable de tipo cadena 
+
+print(Variable_de_tipo_cadena)
+
+# Impresion de la variable de tipo bool 
+
+print(Variable_de_tipo_booleano)
+
+# Impresion de la suma de los primeros números pares 
+
+print(suma_de_primeros_numeros_pares)
