@@ -1,160 +1,58 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# 3. Define una variable de cada tipo primitivo 
 
-# C extensions
-*.so
+# Definir una variable de tipo entero 
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+Variable_de_tipo_entero = 25
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Definir variable de tipo flotante
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+Variable_de_tipo_flotante = 3.1415
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
+# Definir una variable de tipo booleano 
 
-# Translations
-*.mo
-*.pot
+Variable_de_tipo_booleano = True 
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# Definir una variable de tipo cadena 
 
-# Flask stuff:
-instance/
-.webassets-cache
+Variable_de_tipo_cadena = "Soy Ignacio Rodriguez"
 
-# Scrapy stuff:
-.scrapy
+# i. Concatena a la cadena las otras variables aplicando la conversion correcta para funcionar, guarda el resultado en una variable
 
-# Sphinx documentation
-docs/_build/
+resultado = str(Variable_de_tipo_entero) + str(Variable_de_tipo_flotante) + str(Variable_de_tipo_booleano) + Variable_de_tipo_cadena
 
-# PyBuilder
-.pybuilder/
-target/
+# ii. Investiga sobre el limite de los enteros y los flotantes en python y anotar sus descubrimientos como comentarios en el archivo 
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# En Python, los enteros tienen un límite de 4300 caracteres, pero se puede ampliar usando la finción sys.set_int_max_str_digits()
+# Los números flotantes sí tienen un límite, para descubirlo se usa el siguiente código: sys.float_info.min = 2.2250738585072014e-308 y sys.float_info.max = 1.7976931348623157e+308
 
-# IPython
-profile_default/
-ipython_config.py
+# iii. Aplica la fórmula de la suma de los primeros n números pares (investiga r), tomando como n la variable de tipo entero y almacenar el resultado en una variable
 
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+# Se define la variable m como un numero entero 
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+n = int(input("Ingrese un numero entero:  "))
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
+# Se aplica la fórmula para calcular la suma de los primeros n números pares 
 
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
+suma_de_primeros_numeros_pares = n * (n + 1)
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+# iv. Impresión de los resultados de las tareas anteriores
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+# Impresion de la variable de tipo entero 
 
-# SageMath parsed files
-*.sage.py
+print(Variable_de_tipo_entero)
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Impresión de la variable de tipo flotante 
 
-# Spyder project settings
-.spyderproject
-.spyproject
+print(Variable_de_tipo_flotante)
 
-# Rope project settings
-.ropeproject
+# Impresion de la variable de tipo cadena 
 
-# mkdocs documentation
-/site
+print(Variable_de_tipo_cadena)
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# Impresion de la variable de tipo bool 
 
-# Pyre type checker
-.pyre/
+print(Variable_de_tipo_booleano)
 
-# pytype static type analyzer
-.pytype/
+# Impresion de la suma de los primeros números pares 
 
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+print(suma_de_primeros_numeros_pares)
